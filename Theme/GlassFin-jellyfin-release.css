@@ -1,7 +1,10 @@
-/* ─────────────── GlassFin Theme Version 1.0.0 for Jellyfin 10.11.1 - Created by KBH-Reeper ─────────────── */
+/* ─────────────── GlassFin Theme Version 1.1.0 for Jellyfin 10.11.1 - Created by KBH-Reeper ─────────────── */
+/* ───────────-────── Massive shoutout to iscambo13 and their creation of ElegantFin which ───────────────── */
+/* ──────────────────────────────────────  GlassFin is based on <3  ───────────────────────────────────────  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');:root {
     --GlassFinFooter: "GlassFin vVersion 1.0.0";
     color-scheme: dark;
+    --backgroundImage-All: url("https://lh3.googleusercontent.com/pw/AP1GczMa7GKgbHPbG1s3gec0lKRvIIPNEeLRkESTnoDTj1s-NDa1qF2tyqXz_H0kXOVHnknNihdgEpWU-WmEtbKxTRl37ToeMPAo_hLx4moeWm-l5GiVqtUf74xfkLdU1EOj8uyUFLfSldmueY6qKzV3ptXg=w1590-h1590-s-no-gm?authuser=0");
     --darkerGradientPoint: #0e122c;
     --darkerGradientPointAlpha: rgba(17,24,39,.85);
     --lighterGradientPoint: #14143c;
@@ -715,9 +718,23 @@ html {
 }
 
 .layout-desktop .detailPageWrapperContainer {
-    background: transparent;
-    min-height: 46vh;
-    background: linear-gradient(0deg,var(--darkerGradientPointAlpha) 70%,85%,transparent)
+  position: relative;
+  background: none; /* We'll move the image to the pseudo-element */
+  min-height: 46vh;
+  z-index: 0; /* ensures it stays behind text */
+}
+/* ─────────────── Background image - replicate to Details page - START ─────────────── */
+.layout-desktop .detailPageWrapperContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+  z-index: -1; /* put it behind the content */
 }
 
 .layout-tv .detailPageWrapperContainer {
@@ -726,6 +743,7 @@ html {
     min-height: 46vh;
     background: linear-gradient(0deg,var(--darkerGradientPointAlpha) 70%,85%,transparent)
 }
+/* ─────────────── Background image - replicate to Details page - STOP ─────────────── */
 
 .detailPagePrimaryContainer {
     align-content: space-between;
@@ -1150,10 +1168,63 @@ h1,h2 {
     font-style: italic;
     color: var(--textColor)
 }
+/* ─────────────── Background to Desktop ─────────────── */
+html:not(.layout-mobile),
+html:not(.layout-mobile) .backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent) {
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* ─────────────── Background to Mobile Details Section ─────────────── */
+/* Container: no mask here, just create a stacking context and clipping box */
+.layout-mobile .detailPageWrapperContainer {
+  position: relative;
+  isolation: isolate;        /* lets us safely use z-index:-1 on ::before */
+  overflow: hidden;          /* keep the bg layer clipped */
+  padding-top: 0;
+  margin-top: .5em;
 
-html,.nowPlayingPlaylist,.nowPlayingContextMenu,.backgroundContainer:not(.withBackdrop),.backgroundContainer:not(.backgroundContainer-transparent),.backdropContainer {
-    background-color: var(--darkerGradientPoint);
-    background: var(--backgroundGradient)
+  /* remove any previous background from the container itself */
+  background: none;
+}
+
+/* Background layer with the fade, rendered behind the content */
+.layout-mobile .detailPageWrapperContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;               /* behind all content inside the container */
+
+  /* your image */
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* fade the TOP (reveal what’s behind the container at the top edge) */
+  -webkit-mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 20%
+  );
+  mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 20%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+}
+/* ─────────────── Background to Mobile Home Page─────────────── */
+.homeSectionsContainer {
+  padding-top: 30px;
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .backdropImage {
@@ -1585,7 +1656,7 @@ progress+span {
 
 .detail-clamp-text {
     text-align: center;
-    color: var(--dimTextColor);
+    color: white;
     margin-top: 0;
     margin-bottom: 0
 }
@@ -3341,11 +3412,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
         justify-content: center;
         margin-top: calc(-1 * var(--appBarHeight));
         position: relative;
-        width: auto
+        width: auto;
     }
 
     .libraryPage:not(.noSecondaryNavPage):not(.layout-tv .libraryPage) {
-        padding-top: 6.8em!important
+padding-top: 7.5em !important
     }
 }
 
@@ -3356,11 +3427,42 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 9.5em!important
+padding-top: 7.5em !important
+    }
 }
 
-.layout-tv .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 6em!important
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {.
+    contain: style size !important;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 40%,
+            rgba(10, 12, 28, 0.95) 85%,
+            rgba(10, 12, 28, 1) 100%
+        ),
+        var(--backgroundImage-All);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flow;
+    }
+}
+
+.layout-tv .libraryPage:not(.noSecondaryNavPage) {.
+    contain: style size !important;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 40%,
+            rgba(10, 12, 28, 0.95) 85%,
+            rgba(10, 12, 28, 1) 100%
+        ),
+        var(--backgroundImage-All);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flow;
+    }
 }
 
 .layout-tv .headerLeft {
@@ -3528,4 +3630,57 @@ font-weight: normal;
 
 .emby-button.block, .button-alt, .raised, #btnDeleteImage, .manageRecordingButton, .dashboardActionsContainer>.emby-button {
     font-weight: bolder;
+}
+
+/* ─────────────── Background Images ─────────────── */
+/*Mobile Start & Home Page*/
+#indexPage[style] {
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMa7GKgbHPbG1s3gec0lKRvIIPNEeLRkESTnoDTj1s-NDa1qF2tyqXz_H0kXOVHnknNihdgEpWU-WmEtbKxTRl37ToeMPAo_hLx4moeWm-l5GiVqtUf74xfkLdU1EOj8uyUFLfSldmueY6qKzV3ptXg=w1590-h1590-s-no-gm?authuser=0") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: color-burn !important;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.skinHeader-withBackground {
+    background-color: transparent;
+}
+
+/*Library Pages - Collections, Movies, TV Shows etc*/
+
+.page.libraryPage.pageWithAbsoluteTabs.withTabs.mainAnimatedPage {
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  overflow-y: auto;
+}
+.page.libraryPage.noSecondaryNavPage.mainAnimatedPage:not(#itemDetailPage) {
+  position: fixed;
+  background-image: var(--backgroundImage-All);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+}
+
+/* ─────────────── Center Details - Mobile ─────────────── */
+
+/*External Lists - TMDB, IMDB etc*/
+.itemExternalLinks.focuscontainer-x {
+  margin: 0.7em 0;
+  font-size: 0.92rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+.detailSectionContent {
+  text-align: center;
+  color: white;
 }
