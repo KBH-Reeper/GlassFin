@@ -1,8 +1,8 @@
-/* ─────────────── GlassFin Theme Version 1.1.0 for Jellyfin 10.11.1 - Created by KBH-Reeper ─────────────── */
+/* ─────────────── GlassFin Theme Version 1.2.0 for Jellyfin 10.11.1 - Created by KBH-Reeper ─────────────── */
 /* ───────────-────── Massive shoutout to iscambo13 and their creation of ElegantFin which ───────────────── */
 /* ──────────────────────────────────────  GlassFin is based on <3  ───────────────────────────────────────  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');:root {
-    --GlassFinFooter: "GlassFin vVersion 1.0.0";
+    --GlassFinFooter: "GlassFin vVersion 1.2.0";
     color-scheme: dark;
     --backgroundImage-All: url("https://lh3.googleusercontent.com/pw/AP1GczMa7GKgbHPbG1s3gec0lKRvIIPNEeLRkESTnoDTj1s-NDa1qF2tyqXz_H0kXOVHnknNihdgEpWU-WmEtbKxTRl37ToeMPAo_hLx4moeWm-l5GiVqtUf74xfkLdU1EOj8uyUFLfSldmueY6qKzV3ptXg=w1590-h1590-s-no-gm?authuser=0");
     --darkerGradientPoint: #0e122c;
@@ -3632,22 +3632,6 @@ font-weight: normal;
     font-weight: bolder;
 }
 
-/* ─────────────── Background Images ─────────────── */
-/*Mobile Start & Home Page*/
-#indexPage[style] {
-  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMa7GKgbHPbG1s3gec0lKRvIIPNEeLRkESTnoDTj1s-NDa1qF2tyqXz_H0kXOVHnknNihdgEpWU-WmEtbKxTRl37ToeMPAo_hLx4moeWm-l5GiVqtUf74xfkLdU1EOj8uyUFLfSldmueY6qKzV3ptXg=w1590-h1590-s-no-gm?authuser=0") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-blend-mode: color-burn !important;
-  position: fixed;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.skinHeader-withBackground {
-    background-color: transparent;
-}
-
 /*Library Pages - Collections, Movies, TV Shows etc*/
 
 .page.libraryPage.pageWithAbsoluteTabs.withTabs.mainAnimatedPage {
@@ -3655,17 +3639,11 @@ font-weight: normal;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
-  overflow-y: auto;
 }
 .page.libraryPage.noSecondaryNavPage.mainAnimatedPage:not(#itemDetailPage) {
-  position: fixed;
   background-image: var(--backgroundImage-All);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  overflow-y: auto;
 }
 
 /* ─────────────── Center Details - Mobile ─────────────── */
@@ -3683,4 +3661,9 @@ font-weight: normal;
 .detailSectionContent {
   text-align: center;
   color: white;
+}
+
+/* ─────────────── Hide My Media Header - Mobile ─────────────── */
+.sectionTitle.sectionTitle-cards.padded-left {
+  display: none;
 }
