@@ -3,8 +3,9 @@
 /* ──────────────────────────────────────  GlassFin is based on <3  ───────────────────────────────────────  */
 /* ────────────────────────────────────────────────────────────────────────────────────────────────────────  */
 /* ─────────────────────────────────────── Optimised for Desktop use ──────────────────────────────────────  */
+/* ─────────────────────────────────────── Optimised for Desktop use ──────────────────────────────────────  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');:root {
-    --GlassFinFooter: "GlassFin vVersion 1.2.1";
+    --GlassFinFooter: "GlassFin vVersion 1.0.0";
     color-scheme: dark;
     --backgroundImage-All: url("https://lh3.googleusercontent.com/pw/AP1GczMa7GKgbHPbG1s3gec0lKRvIIPNEeLRkESTnoDTj1s-NDa1qF2tyqXz_H0kXOVHnknNihdgEpWU-WmEtbKxTRl37ToeMPAo_hLx4moeWm-l5GiVqtUf74xfkLdU1EOj8uyUFLfSldmueY6qKzV3ptXg=w1590-h1590-s-no-gm?authuser=0");
     --darkerGradientPoint: #0e122c;
