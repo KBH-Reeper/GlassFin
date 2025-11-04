@@ -2048,7 +2048,6 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     color: var(--textColor);
     backdrop-filter: none;
     border-color: transparent;
-    margin: .5em!important;
     border-radius: 30%;
     padding: .6em!important;
     background: transparent;
