@@ -2051,7 +2051,9 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     margin: .5em!important;
     border-radius: 30%;
     padding: .6em!important;
-    background: transparent
+    background: transparent;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 .layout-desktop .detailButton:not(.btnPlay):hover {
