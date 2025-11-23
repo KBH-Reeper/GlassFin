@@ -1575,11 +1575,6 @@ html,
     opacity: 0.9;
 }
 
-.layout-mobile .backgroundContainer.withBackdrop {
-    opacity: 1;
-    background: var(--darkerGradientPoint);
-}
-
 .withSectionTabs .backgroundContainer.withBackdrop {
     background: var(--darkerGradientPoint);
 }
