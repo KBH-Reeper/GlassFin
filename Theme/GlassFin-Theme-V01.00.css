@@ -4265,7 +4265,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     transition: transform 0.25s ease, z-index 0.25s ease;
 }
 .card.overflowBackdropCard.card-hoverable.card-withuserdata:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 1;
 }
 /* audio/track selector coloring */
