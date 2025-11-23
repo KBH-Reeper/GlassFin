@@ -1,0 +1,84 @@
+/*=== Media Bar Plugin - STYLING - START===*/
+/* basic styling for the Media Bar Plugin - START */
+
+#slides-container {
+    top: calc(-1 * var(--appBarHeight));
+}
+
+.backdrop-overlay {
+    background: linear-gradient(
+        var(--lighterGradientPoint),
+        var(--gradientPointAlpha),
+        60%,
+        var(--darkerGradientPointAlpha)
+    );
+}
+
+.plot {
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--lighterGradientPointAlpha);
+}
+
+.genre {
+    font-weight: 900;
+}
+
+.button-container {
+    align-items: center;
+}
+/* Favorite button behavior */
+.favorite-button {
+    background: none;
+    color: var(--textColor);
+    transition: transform 0.25s ease, z-index 0.25s ease;
+}
+/* Favorite button behaviour and coloring */
+.detail-button:hover {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: solid #bbbbbb63 0.5px;
+}
+.favorite-button:hover {
+    color: red;
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: solid #bbbbbb63 0.5px;
+}
+/* Age rating coloring */
+.age-rating {
+    background: orange;
+}
+/* fix information display */
+.info-container {
+padding-left: 20px;
+text-align: center;
+}
+/* Active slide dot styling */
+.dot.active {
+    background-color: orange;
+}
+/* Center align runtim text */
+.runtime {
+    text-align: center;
+}
+/* Hide seperator dots */
+.material-icons.fiber_manual_record:before {
+display: none;
+}
+/*=== Media Bar Plugin - STYLING - END ===*/
+/*=== Fix centering of the interactive buttons - MOBILE ===*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .button-container {
+        top: calc(50% + 25vh);
+        left: 50%;
+        transform: translateX(-50%) scale(0.95);
+        padding-right: 1.2em;
+    }
+}
+/*=== Media Bar Plugin - END ===*/
