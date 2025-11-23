@@ -65,7 +65,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.00.css");
+	@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.01.css");
 
 <details>
   <summary><i>JellyFin Administrator/Server side | In JellyFin Version 10.11.3</i></summary>
