@@ -3542,6 +3542,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     background: #b8b8b81f;
     border-radius: 15px;
     border: solid 1px #a6a6a669;
+    backdrop-filter: blur(3px);
 }
 
 #loginPage {
