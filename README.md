@@ -49,7 +49,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 | Mobile                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------- |
-| <div align="center"><img src="https://github.com/KBH-Reeper/GlassFin/blob/main/Visuals/Mobile/Mobile-Login.jpg?raw=true"><br><strong>Login Page</strong></div>         |
+| <div align="center"><img src="https://github.com/KBH-Reeper/GlassFin/blob/main/Visuals/Mobile/Mobile-LoginScreen.jpg?raw=true"><br><strong>Login Page</strong></div>         |
 | <div align="center"><img src="https://github.com/KBH-Reeper/GlassFin/blob/main/Visuals/Mobile/Mobile-Homescreen.jpg?raw=true"><br><strong>Homescreen</strong></div>             |
 | <div align="center"><img src="https://github.com/KBH-Reeper/GlassFin/blob/main/Visuals/Mobile/Mobile-SideMenu.jpg?raw=true"><br><strong>Menu's</strong></div>         |
 | <div align="center"><img src="https://github.com/KBH-Reeper/GlassFin/blob/main/Visuals/Mobile/Mobile-Movies.jpg?raw=true"><br><strong>Movies Page</strong></div>     |
