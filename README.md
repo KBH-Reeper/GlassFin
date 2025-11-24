@@ -66,9 +66,9 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 ### 𝍌 How to insert the GlassFin CCS theme to your JellyFin? 
 
 <b>Paste the following in Custom CSS code box:</b>
-
-	@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.01.css");
-
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.01.css");
+```
 <details>
   <summary><i>JellyFin Administrator/Server side | In JellyFin Version 10.11.3</i></summary>
 
@@ -91,7 +91,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
 ```
-	@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/PluginStyling/MediaBar-Plugin-latest.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/PluginStyling/MediaBar-Plugin-latest.css");
 ```
 - To undo this change, simply remove the import url related to the MediaBar.
 </details>
