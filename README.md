@@ -4,8 +4,10 @@
 # 🦈 GlassFin 🦈
 GlassFin is a css Jellyfin theme built from ElegantFin by lscambo13 with improved and reactive UI elements to give the UX a more modern and interactive experience. GlassFin updates Jellyfin to be a more unified style and is available for Mobile and Desktop.
 
-
 #### **Original Creator of ElegantFin:** [lscambo13](https://github.com/lscambo13)
+
+### 👌 Optimised for:
+#### Jellyfin 10.11.x
 
 <hr>
 
