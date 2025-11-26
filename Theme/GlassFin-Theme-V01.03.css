@@ -1095,10 +1095,6 @@ html {
     padding-right: calc(var(--sidePadding) - 0.375em);
 }
 
-.itemsContainer:not(.editorsChoiceItemsContainer) {
-    /*margin-right: 13px;*/
-}
-
 .layout-desktop .sectionTitle,
 .layout-tv .sectionTitle {
     font-size: 1.5rem !important;
@@ -2882,7 +2878,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .detailSection > #listChildrenCollapsible {
     order: 6;
-    display: grid;
     grid-column: 2 / 5;
     padding-top: 20px;
 }
@@ -2929,10 +2924,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     padding-left: 0;
     justify-content: center;
     padding-top: 15px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
     width: auto;
-    padding-right: 0 !important;
 }
 
 .sliderBubble {
