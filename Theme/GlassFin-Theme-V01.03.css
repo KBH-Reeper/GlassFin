@@ -2917,16 +2917,16 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 
 .collectionItems .sectionTitleContainer.padded-left {
-    padding-left: 0.375em;
+    padding-left: 0em !important;
 }
 
 .collectionItemsContainer.padded-left {
     padding-left: 0;
+    padding-right: 0 !important;
     justify-content: center;
     padding-top: 15px;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
     width: auto;
 }
 
@@ -3729,6 +3729,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     border-radius: var(--smallRadius);
     object-fit: cover;
     aspect-ratio: 1 / 1;
+    border: solid 1px #b1b1b169;
 }
 
 .nowPlayingBar .nowPlayingImage {
@@ -3844,10 +3845,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     border-width: 0 0 var(--borderWidth) 0;
 }
 
-.layout-mobile .skinHeader-blurred:not(.osdHeader),
-.layout-mobile .withSectionTabs .headerTop {
-    padding: 0 1em 0 0;
-}
 
 .headerTabs.sectionTabs {
     display: grid;
