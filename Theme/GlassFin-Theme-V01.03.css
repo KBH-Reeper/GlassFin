@@ -2929,10 +2929,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     padding-left: 0;
     justify-content: center;
     padding-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 15px;
     width: auto;
+    padding-right: 0 !important;
 }
 
 .sliderBubble {
