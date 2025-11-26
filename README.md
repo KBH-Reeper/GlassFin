@@ -3,11 +3,18 @@
 
 # 🦈 GlassFin 🦈
 GlassFin is a css Jellyfin theme built from ElegantFin by lscambo13 with improved and reactive UI elements to give the UX a more modern and interactive experience. GlassFin updates Jellyfin to be a more unified style and is available for Mobile and Desktop.
+<div align="center" style="display: flex; gap: 5px; justify-content: center;">
+  <a href="https://github.com/KBH-Reeper/GlassFin/releases/latest"><img src="https://img.shields.io/github/v/release/KBH-Reeper/GlassFin?label=Latest%20Release&labelColor=555555&style=for-the-badge" alt="Latest Release"></a>
+  <a href="https://github.com/KBH-Reeper/GlassFin/stargazers"><img src="https://img.shields.io/github/stars/KBH-Reeper/GlassFin?label=%E2%AD%90%20%E2%AD%90%20%E2%AD%90&labelColor=555555&style=for-the-badge" alt="GitHub Stars"></a>
+  
+</div>
 
 #### **Original Creator of ElegantFin:** [lscambo13](https://github.com/lscambo13)
-
+  <a href="https://github.com/lscambo13/ElegantFin/releases/latest"><img src="https://img.shields.io/github/v/release/lscambo13/ElegantFin?label=Go%20Support%3A%20lscambo%20-%20ElegantFin&labelColor=555555&style=for-the-badge" alt="Latest Release"></a>
+  
 ### 👌 Optimised for:
-#### Jellyfin 10.11.x
+<img src="https://img.shields.io/badge/Jellyfin%20Version-10.11.x-AA5CC3?logo=jellyfin&logoColor=00A4DC&labelColor=black" alt="Jellyfin Version">
+ 
 
 <hr>
 
