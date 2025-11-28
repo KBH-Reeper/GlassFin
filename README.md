@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 ### 𝍌 How to insert the GlassFin CCS theme to your JellyFin? 
 
-<b>Paste the following in Custom CSS code box:</b>
+<b>Use the following Custom CSS to use the latest version of GlassFin:</b>
 ```
 @import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.04.css");
 ```
