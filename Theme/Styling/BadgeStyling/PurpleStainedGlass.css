@@ -1,0 +1,11 @@
+/*================Thanks to================*/
+/*==================jbar24=================*/
+.cardIndicators .indicator {
+    background: linear-gradient(130deg, #a95bc2, #00a4db);
+    color: #fff;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    padding: .3em .5em;
+    backdrop-filter: blur(2px);
+    font-weight: bolder;
+}
