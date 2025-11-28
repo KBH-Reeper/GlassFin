@@ -77,7 +77,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 @import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-V01.03.css");
 ```
 <details>
-  <summary><i>JellyFin Administrator/Server side | In JellyFin Version 10.11.3</i></summary>
+  <summary><i>JellyFin Administrator/Server side | In JellyFin Version 10.11.x</i></summary>
 
 1. Open the Dashboard option from the side mega menu.
 2. From the side menu, select the Branding tab
@@ -87,7 +87,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 <hr>
 
-### 🧩 Customising Plugins/Visual elements? 
+## 🧩 Customising Plugins/Visual elements? 
 <details>
   <summary><i>Media Bar plugin</i></summary>
   <b>Areas highlighted in red are the style changes (red indicators will not be present when added to JellyFin)</b>
@@ -114,6 +114,73 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 @import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Stylings/CardButtons.css");
 ```
 - To undo this change, simply remove the import url related to the CardButtons.
+</details>
+
+
+#### Movie Watch & Episode Couter Badges
+<b>Contributed by</b> [jbar24](https://github.com/jbar24)
+<details>
+  <summary><i>Activate Movie & Episode Badges</i></summary>
+  <u>Use the import below to activate the Movie & Episode Badges</u>
+  <img width="994" height="422" alt="image" src="https://github.com/user-attachments/assets/3c9010e3-b516-4e1f-a95a-a6b97cd963fb" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/ActivateBadges.css");
+```
+- To undo this change, simply remove the import url related to the MediaBar.
+</details>
+
+#### Movie Watch & Episode Couter Badge Theming
+<details>
+ <summary>Glass</summary>
+  <u>Requires the Movie & Episode Badges to be activated</u>
+<img width="987" height="382" alt="image" src="https://github.com/user-attachments/assets/a9915cf3-286e-41ed-91bd-fbf9971513ae" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/BadgeStyling/Glass.css");
+```
+</details>
+<details>
+ <summary>Purple Glass</summary>
+  <u>Requires the Movie & Episode Badges to be activated</u>
+<img width="1000" height="433" alt="image" src="https://github.com/user-attachments/assets/bdec5ab9-9e43-4f37-9028-c32b13dd2d26" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/BadgeStyling/PurpleGlass.css");
+```
+</details>
+<details>
+ <summary>Purple Stained Glass - Created by jbar24</summary>
+  <u>Requires the Movie & Episode Badges to be activated</u>
+<img width="998" height="429" alt="image" src="https://github.com/user-attachments/assets/56838818-c47f-470d-b759-7db3ca60cb83" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/BadgeStyling/PurpleStainedGlass.css");
+```
+</details>
+<details>
+ <summary>Red Glass</summary>
+  <u>Requires the Movie & Episode Badges to be activated</u>
+<img width="998" height="427" alt="image" src="https://github.com/user-attachments/assets/ba528ec6-39b7-4e1f-a11a-a88e2b2ef282" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/BadgeStyling/RedGlass.css");
+```
+</details>
+<details>
+ <summary>Blue Glass</summary>
+  <u>Requires the Movie & Episode Badges to be activated</u>
+  <img width="1000" height="426" alt="image" src="https://github.com/user-attachments/assets/d5270320-7c36-428c-928f-362578e2e892" />
+
+- copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/BadgeStyling/BlueGlass.css");
+```
 </details>
 
 <hr>
