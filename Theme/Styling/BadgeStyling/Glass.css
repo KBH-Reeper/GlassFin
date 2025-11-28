@@ -1,0 +1,9 @@
+.cardIndicators .indicator {
+    background: #7c7c7c69;
+    color: #fff;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    padding: .3em .5em;
+    backdrop-filter: blur(2px);
+    font-weight: bolder;
+}
