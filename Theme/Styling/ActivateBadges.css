@@ -1,0 +1,5 @@
+.cardIndicators {
+    display: block; /* ensures visible */
+    right: 0 !important;
+    top: 0 !important;
+}
