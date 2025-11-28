@@ -4296,9 +4296,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 /*=== Music - Track list buttons in line/row - END===*/
 
 /*== Reverts items in music albums to list view - START===*/
-#listChildrenCollapsible:has(h2.hide span) .itemsContainer {
+#listChildrenCollapsible:has(h2.hide > span) .itemsContainer {
     display: grid !important;
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(6, 1fr) !important;
     gap: var(--itemColumnGap) !important;
 }
 
