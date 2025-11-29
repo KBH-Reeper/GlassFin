@@ -74,12 +74,12 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 <b>Use the following Custom CSS to use the latest version of GlassFin:</b>
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-latest-stable.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/GlassFin-Theme-latest-stable.css");
 ```
 <b>Use the following Custom CSS to use a specific version of GlassFin:</b>
 <u>Update the placeholder "xx.xx" with the specific version of GlassFin you wish to use</u>
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/GlassFin-Theme-Vxx.xx.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/GlassFin-Theme-Vxx.xx.css");
 ```
 <details>
   <summary><i>JellyFin Administrator/Server side | In JellyFin Version 10.11.x</i></summary>
