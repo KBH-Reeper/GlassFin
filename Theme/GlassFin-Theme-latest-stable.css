@@ -2938,10 +2938,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     padding-left: 0;
     justify-content: center;
     padding-top: 15px;
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
     width: auto;
+    padding-right: 0 !important;
 }
 
 .sliderBubble {
@@ -4319,6 +4319,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 /*== Fix spacing and centering of library cards - START===*/
 #listChildrenCollapsible #childrenContent .vertical-wrap {
     justify-content: flex-start !important;
+    padding-right: 0 !important;
 }
 /* Center content cards/tiles */
 .vertical-wrap:not(.centered) {
