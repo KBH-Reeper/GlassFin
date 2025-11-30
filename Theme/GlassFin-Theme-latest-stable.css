@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.07 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.08 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.07";
+    --FooterTextGlassFin: "GlassFin V01.08";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
