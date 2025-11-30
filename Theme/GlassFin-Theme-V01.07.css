@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.07 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.06 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.07";
+    --FooterTextGlassFin: "GlassFin V01.06";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -2938,10 +2938,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     padding-left: 0;
     justify-content: center;
     padding-top: 15px;
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
     width: auto;
+    padding-right: 0 !important;
 }
 
 .sliderBubble {
@@ -4319,6 +4319,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 /*== Fix spacing and centering of library cards - START===*/
 #listChildrenCollapsible #childrenContent .vertical-wrap {
     justify-content: flex-start !important;
+    padding-right: 0 !important;
 }
 /* Center content cards/tiles */
 .vertical-wrap:not(.centered) {
