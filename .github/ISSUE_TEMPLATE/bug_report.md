@@ -18,7 +18,8 @@ A clear and concise description of what the bug is.
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+**Screenshots**<br>
+_[Issue will be closed if screenshots are not supplied directly within the issue]_<br>
 If applicable, add screenshots to help explain your problem.
 
 **GlassFin:**
