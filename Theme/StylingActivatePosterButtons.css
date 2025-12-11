@@ -1,0 +1,10 @@
+/*=== Bring back the "Watch" & "Favourite" icons on cards ===*/
+.layout-desktop .cardOverlayButton-br,
+[dir="ltr"].layout-desktop .cardOverlayButton-br {
+    display: flex !important;
+    z-index: 1;
+}
+/*=== Bring back card hamburger/3 dot menu ===*/
+.cardOverlayButton-br .cardOverlayButton-hover[data-action="menu"], .layout-desktop .listItemButton[data-action="menu"] {
+    display: flex !important;
+}
