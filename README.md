@@ -108,7 +108,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 - To undo this change, simply remove the import url related to the MediaBar.
 </details>
 <details>
-  <summary><i>Additional Poster Buttons plugin</i></summary>
+  <summary><i>Poster Function Buttons</i></summary>
   <b>Areas highlighted in red are the style changes (red indicators will not be present when added to JellyFin)</b><br>
 <a>By purposeful design to declutter where possible, the additional menu/interaction button are hidden. This will allow you to re-activate them</a>
   <br>
@@ -116,7 +116,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/ActivateBadges.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/ActivatePosterButtons.css");
 ```
 - To undo this change, simply remove the import url related to the CardButtons.
 </details>
