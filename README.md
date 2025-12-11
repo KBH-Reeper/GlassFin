@@ -116,7 +116,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Stylings/CardButtons.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/ActivateBadges.css");
 ```
 - To undo this change, simply remove the import url related to the CardButtons.
 </details>
