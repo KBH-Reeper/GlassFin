@@ -1,0 +1,58 @@
+/* Make the favourite (button) overlay always visible - START */
+.layout-desktop .card-hoverable .cardOverlayContainer {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    background: transparent !important;
+}
+.card-hoverable .cardOverlayContainer:after {
+    transform: translateY(-100%) translateX(0) !important;
+}
+.backdropCard.card-hoverable .cardOverlayContainer:after,
+.overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
+    transform: translateY(0) translateX(-100%) !important;
+}
+.cardOverlayButton .material-icons.favorite {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Favourite button stays in its position — untouched */
+button[is="emby-ratingbutton"] {
+    visibility: visible !important;
+    top: -210px;
+    right: 90px;
+}
+/* Lock in PLAY and MENU buttons position */
+.detailButton:not(.btnPlay) {
+    top: 0px !important;
+    right: 0px !important;
+}
+.layout-desktop .cardOverlayButton-br,
+[dir="ltr"].layout-desktop .cardOverlayButton-br {
+    display: flex !important;
+}
+/* Lock its natural base position so favourite/menu/play don't shift it */
+.cardOverlayButton-br button[is="emby-playstatebutton"] {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    transform: translateX(0) !important;
+    margin: 0 !important;
+}
+/* Move ONLY the watchlist button EXACTLY 3em left on hover */
+.card-hoverable button[is="emby-playstatebutton"] {
+    transform: translateX(-3em) !important;
+}
+/* When favourited, force favourite icon to always be visible */
+button[is="emby-ratingbutton"][data-isfavorite="true"] .material-icons.favorite {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* when favourited, force the favorite button to be visible even without hover */
+.layout-desktop .card-hoverable button[is="emby-ratingbutton"][data-isfavorite="true"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    /* no position / top / right / display changes here on purpose */
+}
+/* Make the favourite (button) overlay always visible - END */
