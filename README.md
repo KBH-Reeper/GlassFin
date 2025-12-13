@@ -92,7 +92,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 <hr>
 
-## 🧩 Customising Plugins/Visual elements? 
+## 🧩 Plugins Customisation
 <details>
   <summary><i>Media Bar plugin</i></summary>
   <b>Areas highlighted in red are the style changes (red indicators will not be present when added to JellyFin)</b>
@@ -121,8 +121,8 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 - To undo this change, simply remove the import url related to the CardButtons.
 </details>
 
-
-#### Movie Watch & Episode Couter Badges
+## ⚡️ Additional Visual Customisation
+### Movie Watch & Episode Couter Badges
 <b>Contributed by</b> [jbar24](https://github.com/jbar24)
 <details>
   <summary><i>Activate Movie & Episode Badges</i></summary>
@@ -135,7 +135,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 ```
 </details>
 
-#### Movie Watch & Episode Couter Badge Theming
+### Movie Watch & Episode Couter Badge Theming
 <details>
  <summary>Glass</summary>
   <u>Requires the Movie & Episode Badges to be activated</u>
@@ -187,6 +187,31 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 ```
 </details>
 
+### Poster/Tile Function Button Layout
+<b>Created in collaboration with</b> [Rand0mB0y](https://github.com/Rand0mB0y)
+- Activates the poster/tile function buttons, repositions the favorite, watched and menu button. And makes the favorite icon always visible when items is favorited
+<details>
+ <summary>Move Icons When Hovering</summary>
+<i>Watched and Menu buttons move from right to left</i>
+  - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+     
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/PosterButtons/AltButtonPlacement-Transition.css");
+```
+   
+<video src="https://github.com/user-attachments/assets/327755e1-b53b-4608-9df7-d73d28556b1e"/>
+</details>
+<details>
+ <summary>Static Icons When Hovering</summary>
+<i>Watched and Menu buttons move from right to left</i>
+  - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+       
+```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/PosterButtons/AltButtonPlacement-NoTransition.css");
+```
+
+<video src="https://github.com/user-attachments/assets/7945ea33-451f-4151-8217-5561e86e4e36"/>
+</details>
 <hr>
 
 ### ✅ Tested on 
