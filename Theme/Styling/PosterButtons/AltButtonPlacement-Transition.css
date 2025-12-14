@@ -1,4 +1,6 @@
-/* Make the favourite (button) overlay always visible - START */
+/* --------- Make POSTER FUNCTION BUTTONS visible -------- START */
+
+/* Make favourite button visible when item is favourite - start */
 .layout-desktop .card-hoverable .cardOverlayContainer {
     opacity: 1 !important;
     visibility: visible !important;
@@ -16,43 +18,38 @@
     opacity: 1 !important;
     visibility: visible !important;
 }
-/* Favourite button stays in its position — untouched */
+button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.ratingbutton-withrating {
+    opacity: 1 !important; 
+}
+/* Make favourite button visible when item is favourite - end */
+
+/* Make Card posters position relative to stay static when UI zoom is above or below 100%*/ 
+.cardScalable {
+  position: relative !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* Lock favourite button position to top left in relation to poster */
 button[is="emby-ratingbutton"] {
     visibility: visible !important;
-    top: -210px;
-    right: 90px;
-}
-/* Lock in PLAY and MENU buttons position */
-.detailButton:not(.btnPlay) {
-    top: 0px !important;
-    right: 0px !important;
-}
-.layout-desktop .cardOverlayButton-br,
-[dir="ltr"].layout-desktop .cardOverlayButton-br {
-    display: flex !important;
-}
-/* Lock its natural base position so favourite/menu/play don't shift it */
-.cardOverlayButton-br button[is="emby-playstatebutton"] {
-    position: absolute !important;
-    top: 0px !important;
-    right: 0px !important;
-    transform: translateX(0) !important;
-    margin: 0 !important;
+    position: fixed !important;
+    top: 0.5em;
+    left: 0.5em;
 }
 /* Move ONLY the watchlist button EXACTLY 3em left on hover */
 .card-hoverable:hover button[is="emby-playstatebutton"] {
     transform: translateX(-3em) !important;
+    left: 3em;
 }
-/* When favourited, force favourite icon to always be visible */
-button[is="emby-ratingbutton"][data-isfavorite="true"] .material-icons.favorite {
-    opacity: 1 !important;
-    visibility: visible !important;
+.card-hoverable .cardOverlayContainer:after {
+    transform: translateY(-100%) translateX(0) !important;
 }
-/* when favourited, force the favorite button to be visible even without hover */
-.layout-desktop .card-hoverable button[is="emby-ratingbutton"][data-isfavorite="true"] {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-    /* no position / top / right / display changes here on purpose */
+.backdropCard.card-hoverable .cardOverlayContainer:after,
+.overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
+    transform: translateY(0) translateX(-100%) !important;
 }
-/* Make the favourite (button) overlay always visible - END */
+/* --------- Make POSTER FUNCTION BUTTONS visible -------- END */
