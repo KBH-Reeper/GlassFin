@@ -52,4 +52,9 @@ button[is="emby-ratingbutton"] {
 .overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
     transform: translateY(0) translateX(-100%) !important;
 }
+/*Activates poster function buttons - required for V1.09 and above*/
+.layout-desktop .cardOverlayButton-br,
+[dir="ltr"].layout-desktop .cardOverlayButton-br {
+    z-index: 1 !important;
+}
 /* --------- Make POSTER FUNCTION BUTTONS visible -------- END */
