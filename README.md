@@ -196,7 +196,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
   - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
      
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/PosterButtons/AltButtonPlacement-Transition.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/PosterButtons/AltButtonPlacement-Transition.css");
 ```
    
 <video src="https://github.com/user-attachments/assets/327755e1-b53b-4608-9df7-d73d28556b1e"/>
@@ -207,7 +207,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
   - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
        
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@main/Theme/Styling/PosterButtons/AltButtonPlacement-NoTransition.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/PosterButtons/AltButtonPlacement-NoTransition.css");
 ```
 
 <video src="https://github.com/user-attachments/assets/7945ea33-451f-4151-8217-5561e86e4e36"/>
