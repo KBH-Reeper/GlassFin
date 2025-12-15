@@ -1,4 +1,4 @@
-/* --------- Make POSTER FUNCTION BUTTONS visible -------- START */
+/* --------- Poster's FAVOURITE BUTTON always visible when item is favourite --------  START */
 
 /* Make favourite button visible when item is favourite - start */
 .layout-desktop .card-hoverable .cardOverlayContainer {
@@ -34,7 +34,7 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
 }
 
 /* Lock favourite button position to top left in relation to poster */
-button[is="emby-ratingbutton"] {
+.cardScalable button[is="emby-ratingbutton"] {
     visibility: visible !important;
     position: fixed !important;
     top: 0.5em;
@@ -57,4 +57,4 @@ button[is="emby-ratingbutton"] {
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     z-index: 1 !important;
 }
-/* --------- Make POSTER FUNCTION BUTTONS visible -------- END */
+/* --------- Poster's FAVOURITE BUTTON always visible when item is favourite --------  END */
