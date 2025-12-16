@@ -188,8 +188,10 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 </details>
 
 ### Poster/Tile Function Button Layout
-<b>Created in collaboration with</b> [Rand0mB0y](https://github.com/Rand0mB0y)
-- Activates the poster/tile function buttons, repositions the favorite, watched and menu button. And makes the favorite icon always visible when items is favorited
+<b>Created in collaboration with</b> [Rand0mB0y](https://github.com/Rand0mB0y)</br>
+- Activates the poster/tile function buttons, repositions the favorite, watched and menu button. And makes the favorite icon always visible when items is favorited<br>
+
+<u>Requires the Poster Function Buttons to be activated</u> 
 <details>
  <summary>Move Icons When Hovering</summary>
 <i>Watched and Menu buttons move from right to left</i>
