@@ -1,4 +1,4 @@
-/* --------- Poster's FAVOURITE BUTTON always visible when item is favourite --------  START */
+/* --------- Poster's FAVOURITE & WATCHED BUTTONS always visible if item is favourite/watched --------  START */
 
 /* Make favourite button visible when item is favourite - start */
 .layout-desktop .card-hoverable .cardOverlayContainer {
@@ -14,9 +14,11 @@
 .overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
     transform: translateY(0) translateX(-100%) !important;
 }
+/* Add shadow to improve visibility over red/white backgrounds */
 .cardOverlayButton .material-icons.favorite {
     opacity: 1 !important;
     visibility: visible !important;
+	text-shadow: -0.2px -0px 3.5px rgb(0 0 0 / 67%) !important;
 }
 button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.ratingbutton-withrating {
     opacity: 1 !important; 
@@ -35,15 +37,23 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
 
 /* Lock favourite button position to top left in relation to poster */
 .cardScalable button[is="emby-ratingbutton"] {
+	transition: opacity 0.25s ease-in-out;
     visibility: visible !important;
     position: fixed !important;
     top: 0.5em;
     left: 0.5em;
 }
-/* Move ONLY the watchlist button EXACTLY 3em left on hover */
+/* Pre-move the watched button before transition, when not hovered and not watched, add border for visibility */
+.card-hoverable button[is="emby-playstatebutton"] {
+    transform: translateX(3em) !important;
+	text-shadow: -0.5px 0 4px rgb(8 32 1 / 87%) !important;
+    -webkit-text-stroke: 0.5px #0e16009e !important;
+}
+/* Move the watched button to the left on hover */
 .card-hoverable:hover button[is="emby-playstatebutton"] {
-    transform: translateX(-3em) !important;
-    left: 3em;
+    transition: opacity 0.2s ease-in-out;
+    transform: translateX(0.2em) !important;
+    transition: transform 0.25s ease;
 }
 .card-hoverable .cardOverlayContainer:after {
     transform: translateY(-100%) translateX(0) !important;
@@ -52,9 +62,34 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
 .overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
     transform: translateY(0) translateX(-100%) !important;
 }
+/* Hide watched badge label (episode counter), if show/season/movie is fully watched - avoids double watched icons */
+/* Watch badge should still be visible on mobile, which is ideal */
+.layout-desktop .card-hoverable .playedIndicator.indicator {
+    visibility: hidden !important;
+}
+/* Watched button always visible if item is played */
+.cardScalable button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Add transition to play content button */
+.cardScalable button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary {
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* Improve visibility of three dots button icon on hover for white backgrounds */
+.card-hoverable .more_vert {
+  transform: scale(1.15) !important;
+  -webkit-text-stroke: 0.5px #ffffff !important;
+  text-shadow: -0.2px -0.2px 2.5px rgb(0 0 0), 0.2px 0.2px 2.5px rgb(0 0 0), -0.2px -0.2px 2.5px rgb(0 0 0), 0.2px 0.2px 2.5px rgb(0 0 0) !important;
+  transition: opacity 0.75s cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
 /*Activates poster function buttons - required for V1.09 and above*/
 .layout-desktop .cardOverlayButton-br,
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     z-index: 1 !important;
 }
-/* --------- Poster's FAVOURITE BUTTON always visible when item is favourite --------  END */
+
+/* --------- Poster's FAVOURITE & WATCHED BUTTONS always visible if item is favourite/watched --------    END */
