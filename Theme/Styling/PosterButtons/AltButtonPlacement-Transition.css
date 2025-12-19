@@ -64,8 +64,9 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
 }
 /* Hide watched badge label (episode counter), if show/season/movie is fully watched - avoids double watched icons */
 /* Watch badge should still be visible on mobile, which is ideal */
-.layout-desktop .card-hoverable .playedIndicator.indicator {
-    visibility: hidden !important;
+/* KBH-REEPER Update: Use condition targetting for each card to reflect JF stats/data on watched content, instead of CSS class as source of truth*/
+.card:has([data-played="true"]) .cardIndicators {
+    display: none !important;
 }
 /* Watched button always visible if item is played */
 .cardScalable button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played {
