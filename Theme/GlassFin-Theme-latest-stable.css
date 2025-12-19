@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.08 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.09 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.08";
+    --FooterTextGlassFin: "GlassFin V01.09";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -451,8 +451,8 @@ html {
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     bottom: 0.75em;
     right: 0.5em;
-    display: var(--extraCardButtonsVisibility);
-    z-index: 1;
+    /*display: var(--extraCardButtonsVisibility);*/
+    z-index: -1;
 }
 
 .layout-desktop .cardOverlayButton-br button {
@@ -1017,12 +1017,20 @@ html {
     background-color: transparent;
 }
 
-/* this removes the extra large left padding on 10.11.0 */
-.detailPagePrimaryContainer>.detailPagePrimaryContent,
-[dir=ltr] .detailPagePrimaryContainer>.detailRibbon,
-/* this removes the extra large left padding on pre-10.11.0 */
-[dir=ltr] .detailPagePrimaryContainer.detailRibbon {
+.detailPagePrimaryContainer > .detailPagePrimaryContent {
     padding-left: var(--sidePadding);
+}
+
+[dir="ltr"] .detailPagePrimaryContainer > .detailRibbon {
+    /*padding-left: var(--sidePadding);*/
+}
+
+[dir="ltr"] .detailPagePrimaryContainer.detailRibbon {
+    padding-left: var(--sidePadding);
+}
+
+.layout-desktop [dir=ltr] .detailRibbon, .layout-tv [dir=ltr] .detailRibbon{
+padding-left: 0 !important;
 }
 
 .layout-mobile .detailPagePrimaryContent {
