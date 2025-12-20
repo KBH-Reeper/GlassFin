@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.09 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.10 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.09";
+    --FooterTextGlassFin: "GlassFin V01.10";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -1869,6 +1869,8 @@ progress + span {
 .itemExternalLinks.focuscontainer-x {
     color: transparent;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .itemExternalLinks.focuscontainer-x > .button-link {
@@ -4338,3 +4340,36 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     justify-content: flex-start !important;
 }
 /*== Fix spacing and centering of library cards - END===*/
+
+/*====JellyFin Enhanced Support - START====*/
+/*=Feature: *arr Links=*/
+/*Adjust sizing of arr link icons*/
+.arr-link-sonarr::before, .arr-link-radarr::before, .arr-link-bazarr::before {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+
+/*Review Fix for JellyFin Enhanced plugin*/
+.tmdb-review-swipe-container {
+  max-width: 93vw !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 1.2em !important;
+  padding: 1em 0.5em !important;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Make sure each review card doesn't stretch weirdly */
+.tmdb-review-swipe-container > * {
+    flex: 0 0 auto !important;      /* fixed-size items in a row */
+    scroll-snap-align: start;      /* forces first review to display first */
+    width: 80%;      /* counter acts clash with card sizing on mobile */
+    background-color: #00000075;      /* changes card background color */
+    backdrop-filter: blur(15px);      /* applied blur to card background */
+}
+/*====JellyFin Enhanced Support - END====*/
