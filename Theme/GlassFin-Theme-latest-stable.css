@@ -1072,6 +1072,7 @@ padding-left: 0 !important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+	z-index: 1;
 }
 
 .paper-icon-button-light > .material-icons {
