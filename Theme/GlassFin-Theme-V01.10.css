@@ -3918,7 +3918,26 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 }
 
 .layout-desktop .headerTop {
-    padding: 0 1em 0 0;
+    padding: 0 1em 2em 0;
+}
+/*Add blur gradient*/
+.headerTop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  /* Gradient fade: strong at top → none at bottom */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.7) 30%,
+    rgba(0,0,0,0.3) 55%,
+    rgba(0,0,0,0) 100%
+  );
 }
 
 .layout-tv .headerTop {
