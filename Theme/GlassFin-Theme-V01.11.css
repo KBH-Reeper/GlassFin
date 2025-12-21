@@ -1042,6 +1042,7 @@ padding-left: 0 !important;
 .layout-desktop [dir="ltr"] .detailRibbon,
 .layout-tv [dir="ltr"] .detailRibbon {
     flex-direction: column;
+    padding-right: 0 !important;
 }
 
 .detailPagePrimaryContainer > .detailPagePrimaryContent {
