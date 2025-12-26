@@ -53,7 +53,7 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
     transform: translateY(0) translateX(-100%) !important;
 }
 /*Activates poster function buttons - required for V1.09 and above*/
-[dir="ltr"].layout-desktop .card:not([data-type="Actor"]) .cardOverlayButton-br {
+[dir="ltr"].layout-desktop .card:not([data-type="Actor"]):not([data-type="CollectionFolder"]):not([data-type="UserView"]) .cardOverlayButton-br {
     z-index: 1 !important;
 }
 /* --------- Poster's FAVOURITE BUTTON always visible when item is favourite --------  END */
