@@ -45,6 +45,12 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
     transform: translateX(-3em) !important;
     left: 3em;
 }
+/* Displays watlist button if marked as true */
+button[is="emby-playstatebutton"][data-played="true"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    right: -3em;
+}
 .card-hoverable .cardOverlayContainer:after {
     transform: translateY(-100%) translateX(0) !important;
 }
