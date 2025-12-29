@@ -191,31 +191,20 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 
 ### Poster/Tile Function Button Layout
 <b>Created in collaboration with</b> [Rand0mB0y](https://github.com/Rand0mB0y)</br>
-- Activates the poster/tile function buttons, repositions the favorite, watched and menu button. And makes the favorite icon always visible when items is favorited<br>
+- Activates the poster/tile function buttons, repositions the favorite, watched and menu button. And makes the favorite and watched icon always visible when items is favorited or marked as watched<br>
 
-<u>Requires the Poster Function Buttons to be activated</u> 
 <details>
- <summary>Move Icons When Hovering</summary>
-<i>Watched and Menu buttons move from right to left</i>
+ <summary>Alternative Button Placement</summary>
+<i>Animated Watched and Menu buttons move from right to left</i>
   - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
      
 ```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/PosterButtons/AltButtonPlacement-Transition.css");
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/PosterButtons/AltButtonPlacement.css");
 ```
    
-<video src="https://github.com/user-attachments/assets/327755e1-b53b-4608-9df7-d73d28556b1e"/>
+<video src="https://github.com/user-attachments/assets/2d0e176e-bd05-474a-b6ea-4ba848cf766b"/>
 </details>
-<details>
- <summary>Static Icons When Hovering</summary>
-<i>Watched and Menu buttons move from right to left</i>
-  - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
-       
-```
-@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/PosterButtons/AltButtonPlacement-NoTransition.css");
-```
 
-<video src="https://github.com/user-attachments/assets/7945ea33-451f-4151-8217-5561e86e4e36"/>
-</details>
 <hr>
 
 ### ✅ Tested on 
