@@ -89,6 +89,6 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
 
 /*Activates poster function buttons - required for V1.09 and above*/
 [dir="ltr"].layout-desktop .card:not([data-type="Actor"]):not([data-type="CollectionFolder"]):not([data-type="UserView"]) .cardOverlayButton-br {
-    z-index: 1 !important;
+    display: block !important;
 }
 /* --------- Poster's FAVOURITE & WATCHED BUTTONS always visible if item is favourite/watched --------    END */
