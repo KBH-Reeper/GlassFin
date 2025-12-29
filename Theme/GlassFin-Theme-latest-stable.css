@@ -451,8 +451,7 @@ html {
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     bottom: 0.75em;
     right: 0.5em;
-    /*display: var(--extraCardButtonsVisibility);*/
-    z-index: -1;
+    display: var(--extraCardButtonsVisibility);
 }
 
 .layout-desktop .cardOverlayButton-br button {
