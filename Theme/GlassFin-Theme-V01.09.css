@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.11 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.09 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.11";
+    --FooterTextGlassFin: "GlassFin V01.09";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -451,7 +451,8 @@ html {
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     bottom: 0.75em;
     right: 0.5em;
-    display: var(--extraCardButtonsVisibility);
+    /*display: var(--extraCardButtonsVisibility);*/
+    z-index: -1;
 }
 
 .layout-desktop .cardOverlayButton-br button {
@@ -1041,7 +1042,6 @@ padding-left: 0 !important;
 .layout-desktop [dir="ltr"] .detailRibbon,
 .layout-tv [dir="ltr"] .detailRibbon {
     flex-direction: column;
-    padding-right: 0 !important;
 }
 
 .detailPagePrimaryContainer > .detailPagePrimaryContent {
@@ -1072,7 +1072,6 @@ padding-left: 0 !important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-	z-index: 1;
 }
 
 .paper-icon-button-light > .material-icons {
@@ -1870,8 +1869,6 @@ progress + span {
 .itemExternalLinks.focuscontainer-x {
     color: transparent;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 .itemExternalLinks.focuscontainer-x > .button-link {
@@ -3919,26 +3916,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 }
 
 .layout-desktop .headerTop {
-    padding: 0 1em 2em 0;
-}
-/*Add blur gradient*/
-.headerTop::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  /* Gradient fade: strong at top → none at bottom */
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.7) 30%,
-    rgba(0,0,0,0.3) 55%,
-    rgba(0,0,0,0) 100%
-  );
+    padding: 0 1em 0 0;
 }
 
 .layout-tv .headerTop {
@@ -4360,45 +4338,3 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     justify-content: flex-start !important;
 }
 /*== Fix spacing and centering of library cards - END===*/
-
-/*====JellyFin Enhanced Support - START====*/
-/*=Feature: *arr Links=*/
-/*Adjust sizing of arr link icons*/
-.arr-link-sonarr::before, .arr-link-radarr::before, .arr-link-bazarr::before {
-    margin-left: 2px !important;
-    margin-right: 2px !important;
-}
-
-/*Review Fix for JellyFin Enhanced plugin*/
-.tmdb-review-swipe-container {
-  max-width: 93vw !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 1.2em !important;
-  padding: 1em 0.5em !important;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Make sure each review card doesn't stretch weirdly */
-.tmdb-review-swipe-container > * {
-    flex: 0 0 auto !important;      /* fixed-size items in a row */
-    scroll-snap-align: start;      /* forces first review to display first */
-    width: 80%;      /* counter acts clash with card sizing on mobile */
-    background-color: #00000075;      /* changes card background color */
-    backdrop-filter: blur(15px);      /* applied blur to card background */
-}
-
-/*Enables Random Selection top right header button to be in line with other icon behaviour*/
-#randomItemButtonContainer {
-  transition:
-    transform 200ms ease,
-    box-shadow 200ms ease,
-    background-color 200ms ease,
-    backdrop-filter 200ms ease;
-}
-/*====JellyFin Enhanced Support - END====*/
