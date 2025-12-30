@@ -73,20 +73,20 @@ button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-li
     opacity: 1 !important;
     visibility: visible !important;
 }
-
 /* Add transition to play content button */
 .cardScalable button.cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary {
     transition: opacity 0.25s ease-in-out;
 }
-
 /* Improve visibility of three dots button icon on hover for white backgrounds */
 .card-hoverable .more_vert {
-  transform: scale(1.15) !important;
-  -webkit-text-stroke: 0.5px #ffffff !important;
-  text-shadow: -0.2px -0.2px 2.5px rgb(0 0 0), 0.2px 0.2px 2.5px rgb(0 0 0), -0.2px -0.2px 2.5px rgb(0 0 0), 0.2px 0.2px 2.5px rgb(0 0 0) !important;
+  transform: scale(1.18) translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-filter: blur(0);
+  will-change: transform;
+  -webkit-text-stroke: 1px #ffffff !important;
+  text-shadow: 0.5px 0.5px 3.5px rgba(0, 0, 0), -0.5px -0.5px 3.5px rgba(0, 0, 0), -1px 0.5px 3px rgba(0, 0, 0), 1px -1px 3px rgba(0, 0, 0) !important;
   transition: opacity 0.75s cubic-bezier(0.4, 0, 1, 1) !important;
 }
-
 /*Activates poster function buttons - required for V1.09 and above*/
 [dir="ltr"].layout-desktop .card:not([data-type="Actor"]):not([data-type="CollectionFolder"]):not([data-type="UserView"]) .cardOverlayButton-br {
     display: block !important;
