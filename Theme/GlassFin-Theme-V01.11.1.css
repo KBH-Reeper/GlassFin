@@ -452,7 +452,7 @@ html {
     bottom: 0.75em;
     right: 0.5em;
     /*display: var(--extraCardButtonsVisibility);*/
-    z-index: -1;
+    z-index: 1;
 }
 
 .layout-desktop .cardOverlayButton-br button {
