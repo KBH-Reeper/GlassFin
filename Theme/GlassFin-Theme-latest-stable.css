@@ -451,7 +451,8 @@ html {
 [dir="ltr"].layout-desktop .cardOverlayButton-br {
     bottom: 0.75em;
     right: 0.5em;
-    display: var(--extraCardButtonsVisibility);
+    /*display: var(--extraCardButtonsVisibility);*/
+    z-index: -1;
 }
 
 .layout-desktop .cardOverlayButton-br button {
@@ -4402,3 +4403,26 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     backdrop-filter 200ms ease;
 }
 /*====JellyFin Enhanced Support - END====*/
+
+/*===Unify button behavior - START===*/
+.card-hoverable button[is="emby-playstatebutton"]:hover {
+    transform: translateX(.2em) scale(1.2) !important;
+}
+.paper-icon-button-light {
+    border-radius: 12px !important;
+}
+.paper-icon-button-light:hover:not(:disabled) {
+        transition: .2s ease !important;
+    }
+button[data-action="resume"] {
+  transform: scale(1) !important;
+  transition: transform 0.2s ease !important;
+}
+
+button[data-action="resume"]:hover {
+  transform: scale(1.4) !important;
+}
+.cardScalable button[is="emby-ratingbutton"] {
+    transition: .2s ease !important;
+}
+/*===Unify button behavior - END===*/
