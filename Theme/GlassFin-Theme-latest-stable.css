@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.11 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.12 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.11";
+    --FooterTextGlassFin: "GlassFin V01.12";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -252,7 +252,7 @@ html {
 }
 
 .paper-icon-button-light {
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .emby-button.show-focus:focus,
@@ -4230,6 +4230,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
         border: solid #bbbbbb63 0.5px;
         background: rgb(255 255 255 / 5%);
         transform: scale(1.2);
+		transition: .2s ease !important;
     }
 }
 /* Burger menu padding */
@@ -4404,25 +4405,18 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 }
 /*====JellyFin Enhanced Support - END====*/
 
-/*===Unify button behavior - START===*/
+/*===Unify card/poster button behavior - START===*/
 .card-hoverable button[is="emby-playstatebutton"]:hover {
     transform: translateX(.2em) scale(1.2) !important;
 }
-.paper-icon-button-light {
-    border-radius: 12px !important;
-}
-.paper-icon-button-light:hover:not(:disabled) {
-        transition: .2s ease !important;
-    }
 button[data-action="resume"] {
   transform: scale(1) !important;
   transition: transform 0.2s ease !important;
 }
-
 button[data-action="resume"]:hover {
   transform: scale(1.4) !important;
 }
 .cardScalable button[is="emby-ratingbutton"] {
     transition: .2s ease !important;
 }
-/*===Unify button behavior - END===*/
+/*===Unify card/poster button behavior - END===*/
