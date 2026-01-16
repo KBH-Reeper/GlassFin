@@ -4406,7 +4406,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 
 /*===Unify button behavior - START===*/
 .card-hoverable button[is="emby-playstatebutton"]:hover {
-    transform: translateX(.2em) scale(1.2) !important;
+    scale: 1.2 !important;
 }
 .paper-icon-button-light {
     border-radius: 12px !important;
