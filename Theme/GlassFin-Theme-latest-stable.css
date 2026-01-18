@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.11.1 built in Jellyfin 10.11.3 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.12 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.11.1";
+    --FooterTextGlassFin: "GlassFin V01.12";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -567,7 +567,7 @@ html {
     box-sizing: border-box;
     background-position: 50%;
     height: 10vw;
-    width: 16.5vw;
+    width: 21vw;
 }
 
 .layout-desktop .listItem-largeImage .listItemBody {
@@ -1569,8 +1569,8 @@ html,
 }
 
 .backgroundContainer.withBackdrop {
-    opacity: 0.9;
-    background: linear-gradient(0deg, var(--darkerGradientPoint), 45%, rgba(17, 24, 39, 0.25));
+    opacity: 0.7;
+    background: linear-gradient(0deg, var(--darkerGradientPoint), 10%, rgba(17, 24, 39, 0.25));
 }
 
 .layout-tv .backgroundContainer.withBackdrop {
@@ -2897,7 +2897,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     order: 6;
     grid-column: 2 / 5;
     display: block;
-    padding-top: 20px;
+    padding: 0.375em !important;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -4087,6 +4087,13 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
         padding: 0 1em 0 0;
     }
 
+  /*fixes main menu placement (laptop+desktop)*/
+    @media (min-width: 1024px) {
+    .headerTabs.sectionTabs {
+      margin-top: calc(-2em - 74.4px);
+      }
+    }
+
     .headerTabs.sectionTabs {
         padding-bottom: 1.5em;
     }
@@ -4247,7 +4254,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
         backdrop-filter: var(--blurLargest);
         border: solid #bbbbbb63 0.5px !important;
         box-shadow: var(--shadow);
-        /*transform: scale(1.02);*/
+        transform: scale(1.02) !important;
+        transition: transform 0.5s ease;
         z-index: 1;
     }
 }
@@ -4402,11 +4410,40 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     background-color 200ms ease,
     backdrop-filter 200ms ease;
 }
+/*=Jellyfin Enhanced GlassFin Styling=*/
+/*Request button change*/
+.jellyseerr-request-button {
+height: 3em !important;
+}
+.jellyseerr-request-button.jellyseerr-button-request {
+    background-color: transparent !important;
+    color: #fff !important;
+    backdrop-filter: blur(7px);
+}
+button.jellyseerr-split-arrow.emby-button.button-submit {
+    background: transparent !important;
+    backdrop-filter: blur(7px);
+}
+
+/*Request 4K button change*/
+.jellyseerr-4k-popup-item {
+    background-color: rgb(24 148 8 / 55%) !important;
+    font-weight: bolder !important;
+    box-shadow: 0px 6px 10px 3px #00000059 !important;
+}
+/*Movie badge*/
+.jellyseerr-media-badge-movie {
+    background-color: transparent !important;
+    box-shadow: 5px 5px 0 1px rgb(69 69 69 / 9%), 0 8px 24px rgb(36 36 36 / 57%); !important;
+}
+.jellyseerr-icon-on-card {
+    opacity: 70%
+}
 /*====JellyFin Enhanced Support - END====*/
 
 /*===Unify button behavior - START===*/
 .card-hoverable button[is="emby-playstatebutton"]:hover {
-    transform: translateX(.2em) scale(1.2) !important;
+    scale: 1.2 !important;
 }
 .paper-icon-button-light {
     border-radius: 12px !important;
