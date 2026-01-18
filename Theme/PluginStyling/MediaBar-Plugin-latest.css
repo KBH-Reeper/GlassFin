@@ -5,6 +5,11 @@
     top: calc(-1 * var(--appBarHeight));
 }
 
+/* remove the washed out gradient over media bar content*/
+.gradient-overlay {
+    background: none !important;
+}
+
 .backdrop-overlay {
     background: linear-gradient(
         var(--lighterGradientPoint),
