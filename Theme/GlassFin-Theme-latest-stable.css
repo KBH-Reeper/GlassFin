@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.12 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.13 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.12";
+    --FooterTextGlassFin: "GlassFin V01.13";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -2740,7 +2740,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .detailSection {
     display: grid;
-    column-gap: 60px;
+	  grid-template-columns: repeat(4, 1fr);
 }
 
 .layout-mobile .detailSection {
@@ -2891,13 +2891,15 @@ div[data-role="controlgroup"] a.ui-btn-active {
     order: 5;
     grid-column: 1;
     padding-top: 20px;
+    width: 50%;
 }
 
 .detailSection > #listChildrenCollapsible {
     order: 6;
     grid-column: 2 / 5;
     display: block;
-    padding: 0.375em !important;
+    padding-top: 0.375em !important;
+	  padding-left: 5.8vw;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -2906,6 +2908,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     box-sizing: border-box;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
+	padding-left: 5.8vw;
 }
 
 .detailSectionContent {
@@ -4367,6 +4370,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .nextUpSection.verticalSection.detailVerticalSection
     > .nextUpItems.vertical-wrap.padded-right.itemsContainer {
     justify-content: flex-start !important;
+    padding-right: 0 !important;
+    width: 400px;
+    margin: 0 !important;
 }
 /*== Fix spacing and centering of library cards - END===*/
 
