@@ -2740,7 +2740,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .detailSection {
     display: grid;
-	  grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .layout-mobile .detailSection {
@@ -2899,7 +2899,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     grid-column: 2 / 5;
     display: block;
     padding-top: 0.375em !important;
-	  padding-left: 5.8vw;
+	padding-left: 5.8vw;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -2908,7 +2908,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     box-sizing: border-box;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
-	padding-left: 5.8vw;
 }
 
 .detailSectionContent {
