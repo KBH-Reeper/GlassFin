@@ -2894,12 +2894,14 @@ div[data-role="controlgroup"] a.ui-btn-active {
     width: 50%;
 }
 
+.layout-desktop .detailSection > #listChildrenCollapsible {
+    padding-left: 5.8vw;
+}
 .detailSection > #listChildrenCollapsible {
     order: 6;
     grid-column: 2 / 5;
     display: block;
-    padding-top: 0.375em !important;
-	padding-left: 5.8vw;
+    padding-top: 1.3em !important;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
