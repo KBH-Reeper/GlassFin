@@ -2920,6 +2920,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .nextUpSection.hide ~ #listChildrenCollapsible,
 .trackSelections.hide ~ .recordingFields.hide ~ .itemDetailsGroup {
     grid-column: 1 / 5;
+	padding-left: 0 !important;
 }
 
 .layout-mobile .trackSelections,
