@@ -4098,6 +4098,13 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
       margin-top: calc(-2em - 74.4px);
       }
     }
+	/*fixes main menu placement (iPads+Mobile)*/
+	@media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
+  .headerTabs.sectionTabs {
+    margin-top: -2em !important;
+    justify-content: center;
+  }
+}
 
     .headerTabs.sectionTabs {
         padding-bottom: 1.5em;
