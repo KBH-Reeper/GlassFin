@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.13 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.14 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.13";
+    --FooterTextGlassFin: "GlassFin V01.14";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -4092,7 +4092,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
         padding: 0 1em 0 0;
     }
 
-  /*fixes main menu placement (laptop+desktop)*/
+  	/*fixes main menu placement (laptop+desktop)*/
     @media (min-width: 1024px) {
     .headerTabs.sectionTabs {
       margin-top: calc(-2em - 74.4px);
@@ -4247,9 +4247,16 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
         border-radius: 15px;
         backdrop-filter: blur(10px);
         border: solid #bbbbbb63 0.5px;
-        background: rgb(255 255 255 / 5%);
+        background-color: rgb(255 255 255 / 5%);
         transform: scale(1.2);
+        z-index: 1;
     }
+}
+.headerUserButtonRound div, .headerUserImage {
+    scale: 0.7;
+}
+.paper-icon-button-light:hover .headerUserButtonRound {
+  transform: scale(1.8);
 }
 /* Burger menu padding */
 .flex.align-items-center.flex-grow.headerTop .headerLeft {
@@ -4478,3 +4485,12 @@ button[data-action="resume"]:hover {
     transition: .2s ease !important;
 }
 /*===Unify button behavior - END===*/
+
+/*===Application Specific Fixes===*/
+/*===Jellyfin Media Player - START===*/
+/*Fixes header menu bar*/
+.skinHeader-withBackground {
+    background-color: transparent;
+	border-style: none !important;
+}
+/*===Jellyfin Media Player - END===*/
