@@ -4485,3 +4485,12 @@ button[data-action="resume"]:hover {
     transition: .2s ease !important;
 }
 /*===Unify button behavior - END===*/
+
+/*===Application Specific Fixes===*/
+/*===Jellyfin Media Player - START===*/
+/*Fixes header menu bar*/
+.skinHeader-withBackground {
+    background-color: transparent;
+	border-style: none !important;
+}
+/*===Jellyfin Media Player - END===*/
