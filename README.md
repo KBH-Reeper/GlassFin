@@ -31,7 +31,7 @@ GlassFin is a css Jellyfin theme built from ElegantFin by lscambo13 with improve
 <hr>
 
 ### 💿 Theme Demonstration
-JellyFin V10.11.3
+JellyFin V10.11.6
 #### 🔌 Installed Plugins
 - Media Bar by [IAmParadox27](https://github.com/IAmParadox27/jellyfin-plugin-media-bar)
 - Jellyfin Enhanced by [n00bcodr](https://github.com/n00bcodr/Jellyfin-Enhanced)
@@ -208,7 +208,7 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 <hr>
 
 ### ✅ Tested on 
-- Jellyfin Server v10.11.3
+- Jellyfin Server v10.11.6
 - Google Chrome v142.x
 - Jellyfin iOS App v1.7.0.8
 
