@@ -205,6 +205,26 @@ https://github.com/user-attachments/assets/b36305d9-f209-4879-9266-8b338f3dd1f7
 <video src="https://github.com/user-attachments/assets/2d0e176e-bd05-474a-b6ea-4ba848cf766b"/>
 </details>
 
+### Squared Actor Posters
+<b>Contributed by</b> [ludoflylp](https://github.com/ludoflylp)</br>
+<i>Enhancement: [32](https://github.com/KBH-Reeper/GlassFin/issues/32)<br>
+- Updates the native round actor poster to display square posters with beveled edges<br>
+
+<details>
+ <summary>Square Actor Posters</summary>
+<B>Before</B>
+<img width="989" height="327" alt="image" src="https://github.com/user-attachments/assets/3eed8c6e-221a-4029-90f0-8b55cbe98f2e" />
+<br>
+  <B>After</B>
+  <img width="987" height="328" alt="image" src="https://github.com/user-attachments/assets/4cd7cb02-600c-4b04-b072-42050574d85c" />
+<br>
+  - copy and paste the following code at the end in Custom CSS box, click save. (Can require a refresh or deletion of browser cache to become available)
+
+  ```
+@import url("https://cdn.jsdelivr.net/gh/KBH-Reeper/GlassFin@latest/Theme/Styling/ActorPosters/SquareActorPosters.css");
+```
+</details>
+
 <hr>
 
 ### ✅ Tested on 
