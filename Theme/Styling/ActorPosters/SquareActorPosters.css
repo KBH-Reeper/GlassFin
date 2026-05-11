@@ -1,0 +1,17 @@
+/*================Thanks to================*/
+/*================ludoflylp================*/
+@supports (aspect-ratio: 1 / 1) {
+#castCollapsible .cardScalable,
+#guestCastContent .cardScalable {
+aspect-ratio: 1 / 1 !important;
+border-radius: var(--largeRadius) !important;
+}
+}
+#castCollapsible .checkboxContainer .emby-checkbox:checked + span + .checkboxOutline.multiSelectCheckboxOutline,
+#guestCastContent .checkboxContainer .emby-checkbox:checked + span + .checkboxOutline.multiSelectCheckboxOutline {
+border-radius: var(--largeRadius) !important;
+}
+#castCollapsible .cardImageContainer,
+#guestCastContent .cardImageContainer {
+border-radius: var(--largeRadius) !important;
+}
