@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.14 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.14.1 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.14";
+    --FooterTextGlassFin: "GlassFin V01.14.1";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -4185,13 +4185,22 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     padding: 0.25rem 0.75rem !important;
     transition: all 1s ease !important;
     background-color: rgba(168, 168, 168, 0.17) !important;
-
+    pointer-events: none !important;
     /* Desktop-only margins */
     margin-left: 17em !important;
     margin-right: 17em !important;
 
     white-space: nowrap !important;
 }
+/* Keep the actual tab buttons clickable - Fix #33 */
+.layout-desktop .tabs-viewmenubar .emby-tab-button {
+    pointer-events: auto !important;
+}
+/* Make sure the right-side header buttons stay above the tab area - Fix #33 */
+.layout-desktop .headerRight {
+    position: relative !important;
+    z-index: 10 !important;
+    pointer-events: auto !important;
 
 /* MOBILE STYLING - Border*/
 .layout-mobile .headerTabs.sectionTabs .tabs-viewmenubar {
