@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.14.1 built in Jellyfin 10.11.5 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.14.2 built in Jellyfin 10.11.6 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.14.1";
+    --FooterTextGlassFin: "GlassFin V01.14.2";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -2828,6 +2828,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     align-content: END;
     min-height: 16vh;
     text-align: center;
+    margin-right: var(--sidePadding) !important;
 }
 
 .detailSectionContent:has(.tagline.hide + .overview.hide) {
@@ -2838,6 +2839,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     outline: none;
     overflow: hidden;
     margin-top: 1em;
+    margin-right: var(--sidePadding) !important;
     border-radius: var(--smallRadius);
     border: none;
     box-shadow: inset 0 0 0 0.06em var(--borderColor) !important;
@@ -3011,7 +3013,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 
 .padded-right {
-    padding-right: var(--sidePadding) !important;
+    padding-right: 0 !important;
 }
 
 .paddded-left {
@@ -4156,6 +4158,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 }
 
 /* KBH-REEPER Edits */
+/*Movie and series overview text centering on screen*/
+.detail-clamp-text {
+    text-align: center !important;
+}
+
 /*=== Top menu - Selection slider - START ===*/
 /*Header Tab styling*/
 /*.emby-tabs-slider {
@@ -4298,8 +4305,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 /*=== Movie/Series overview - START ===*/
 .overview {
     text-align: center;
-    color: white;
-    font-weight: 600;
+    color: white !important;
+    font-weight: 600 !important;
 }
 /*=== Movie/Series overview - END ===*/
 
@@ -4479,8 +4486,19 @@ button.jellyseerr-split-arrow.emby-button.button-submit {
 .paper-icon-button-light {
     border-radius: 12px !important;
 }
+/*Fix menu button - top left*/
+.headerButton.mainDrawerButton.barsMenuButton {
+    background: #b8b8b81f;
+    border-radius: 10px;
+    border: 1px solid #a6a6a669;
+    backdrop-filter: blur(3px);
+    margin-left: 15px;
+}
 .paper-icon-button-light:hover:not(:disabled) {
         transition: .2s ease !important;
+        transform: scale(1.2);
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 button[data-action="resume"] {
   transform: scale(1) !important;
