@@ -1877,7 +1877,6 @@ progress + span {
 
 .itemExternalLinks.focuscontainer-x > .button-link {
     color: var(--textColor);
-    background-color: var(--selectorBackgroundColor);
     padding: 0.125em 0.5em;
     border-radius: var(--smallerRadius);
     margin-bottom: 0.5em;
@@ -1891,33 +1890,98 @@ progress + span {
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a:hover,
 .itemExternalLinks.focuscontainer-x > a:active {
-    background-color: var(--activeColor) !important;
     color: white !important;
     transform: scale(1.3);
 }
 
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:active {
+    background-color: rgb(0 155 225 / 60%) !important;
+    color: black !important;
+    border-radius: 8px !important;
+    padding-left: 8px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:active {
+    background-color: rgb(225 187 0 / 60%) !important;
+    color: black !important;
+    border-radius: 8px !important;
+    padding-left: 8px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Letterboxd"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Letterboxd"]:active {
+    background-color: rgb(0 0 0 / 60%) !important;
+    color: black !important;
+    border-radius: 8px !important;
+    padding-left: 8px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="View on Seer"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="View on Seer"]:active {
+    background-color: rgb(133 0 187 / 60%) !important;
+    color: black !important;
+    border-radius: 8px !important;
+    padding-left: 8px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover,
 .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
-    background-color: rgb(26, 183, 216) !important;
+    background-color: rgb(26 183 216 / 60%) !important;
     color: black !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover,
 .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:active {
-    background-color: rgb(226, 182, 22) !important;
+    background-color: rgb(226 182 22 / 60%) !important;
     color: black !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover,
 .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:active {
-    background-color: rgb(108, 213, 145) !important;
+    background-color: rgb(108 213 145 / 60%) !important;
     color: black !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:hover,
 .itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:active {
     background-color: rgb(171, 58, 173) !important;
     color: var(--textColor) !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:hover,
+.itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:active {
+    background-color: rgb(171, 58, 173) !important;
+    color: var(--textColor) !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="theaudiodb.com"]:hover,
@@ -4442,22 +4506,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     margin-bottom: 0.5em;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:active {
-    background-color: rgb(0, 0, 0) !important;
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Letterboxd"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Letterboxd"]:active {
+    background-color: rgb(171, 58, 173) !important;
     color: var(--textColor) !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:hover,
-.itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:active {
-    background-color: rgb(255, 194, 48) !important;
-    color: var(--textColor) !important;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:hover,
-.itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:active {
-    background-color: rgb(7, 186, 233) !important;
-    color: var(--textColor) !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Bazarr"]:hover,
@@ -4479,22 +4535,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .itemExternalLinks.focuscontainer-x > a:hover, .itemExternalLinks.focuscontainer-x > a:active {
     border-radius: 8px;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover, .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover {
-    padding-left: 5px !important;
-    padding-top: 2px !important;
-}
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:active {
-    background-color: rgb(108 213 145 / 60%) !important;
-    color: black !important;
-}
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:active {
-    background-color: rgb(226 182 22 / 60%) !important;
-    color: black !important;
-}
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
-    background-color: rgb(26 183 216 / 60%) !important;
-    color: black !important;
-}
+
 /*===END===*/
 
 /* Make sure each review card doesn't stretch weirdly */
@@ -4587,3 +4628,41 @@ button[data-action="resume"]:hover {
 	border-style: none !important;
 }
 /*===Jellyfin Media Player - END===*/
+
+.itemExternalLinks.focuscontainer-x > a.arr-link,
+.itemExternalLinks.focuscontainer-x > a.letterboxd-link {
+    color: var(--textColor);
+    background-color: inherit !important;
+    padding: 0.125em 0.5em;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:hover,
+.itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:active {
+    background-color: rgb(171, 58, 173) !important;
+    color: var(--textColor) !important;
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.itemExternalLinks.focuscontainer-x > .button-link {
+    background-color: rgb(55 65 81 / 0%);
+}
+
+.itemExternalLinks.focuscontainer-x > .button-link {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.itemExternalLinks.focuscontainer-x > a:hover, .itemExternalLinks.focuscontainer-x > a:active {
+    border-radius: 8px;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
+    background-color: rgb(26 183 216 / 60%) !important;
+    color: black !important;
+}
