@@ -1,4 +1,4 @@
-/* ──────────── GlassFin Theme Version 01.14.2 built in Jellyfin 10.11.6 - Created by KBH-Reeper ───────────── */
+/* ──────────── GlassFin Theme Version 01.14.3 built in Jellyfin 10.11.6 - Created by KBH-Reeper ───────────── */
 /* ─────── Massive shoutout to iscambo13 and their creation of ElegantFin which GlassFin is based on ─────── */
 /* ────────────────────────────────────────────  <3 <3 <3 <3  ────────────────────────────────────────────── */
 
@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --FooterTextGlassFin: "GlassFin V01.14.2";
+    --FooterTextGlassFin: "GlassFin V01.14.3";
     /* Base theme colors */
     color-scheme: dark;
     --darkerGradientPoint: #090d30;
@@ -4430,6 +4430,72 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
+
+/*===JellyFin Enhanced plugin - button ui and design fix===*/
+/*===START===*/
+.itemExternalLinks.focuscontainer-x > a.arr-link,
+.itemExternalLinks.focuscontainer-x > a.letterboxd-link {
+    color: var(--textColor);
+    background-color: inherit !important;
+    padding: 0.125em 0.5em;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:hover,
+.itemExternalLinks.focuscontainer-x > a[href*="letterboxd.com"]:active {
+    background-color: rgb(0, 0, 0) !important;
+    color: var(--textColor) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Radarr"]:active {
+    background-color: rgb(255, 194, 48) !important;
+    color: var(--textColor) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Sonarr"]:active {
+    background-color: rgb(7, 186, 233) !important;
+    color: var(--textColor) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[title*="Bazarr"]:hover,
+.itemExternalLinks.focuscontainer-x > a[title*="Bazarr"]:active {
+    background-color: rgb(0, 0, 0) !important;
+    color: var(--textColor) !important;
+}
+
+.itemExternalLinks.focuscontainer-x > .button-link {
+    background-color: rgb(55 65 81 / 0%);
+}
+
+.itemExternalLinks.focuscontainer-x > .button-link {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.itemExternalLinks.focuscontainer-x > a:hover, .itemExternalLinks.focuscontainer-x > a:active {
+    border-radius: 8px;
+}
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover, .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover {
+    padding-left: 5px !important;
+    padding-top: 2px !important;
+}
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:active {
+    background-color: rgb(108 213 145 / 60%) !important;
+    color: black !important;
+}
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:active {
+    background-color: rgb(226 182 22 / 60%) !important;
+    color: black !important;
+}
+.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
+    background-color: rgb(26 183 216 / 60%) !important;
+    color: black !important;
+}
+/*===END===*/
 
 /* Make sure each review card doesn't stretch weirdly */
 .tmdb-review-swipe-container > * {
