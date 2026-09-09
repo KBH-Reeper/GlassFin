@@ -1876,8 +1876,6 @@ progress + span {
 }
 
 .itemExternalLinks.focuscontainer-x > .button-link {
-    color: var(--textColor);
-    background-color: var(--selectorBackgroundColor);
     padding: 0.125em 0.5em;
     border-radius: var(--smallerRadius);
     margin-bottom: 0.5em;
@@ -4486,14 +4484,20 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:active {
     background-color: rgb(108 213 145 / 60%) !important;
     color: black !important;
+	border-radius: 8px;
+    padding-left: 5px !important;
 }
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:active {
     background-color: rgb(226 182 22 / 60%) !important;
     color: black !important;
+	border-radius: 8px;
+    padding-left: 5px !important;
 }
 .layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover, .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
     background-color: rgb(26 183 216 / 60%) !important;
     color: black !important;
+	border-radius: 8px;
+    padding-left: 5px !important;
 }
 /*===END===*/
 
