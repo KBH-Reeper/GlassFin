@@ -1,0 +1,357 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Currently Desktop Only */
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Move Top Bar to the Left Side & Rearange its Buttons Order ~~~~~~~~ START */
+/* Whole bar */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv {
+  position: fixed;
+  padding-left: 0px;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* User Avatar Button */
+.layout-desktop .MuiBox-root.css-2uchni {
+  order: 1;
+  z-index: 1000 !important;
+  margin-right: auto;
+  margin-left: 7px;
+  padding-top: 7px;
+}
+
+/* SyncPlay, ScreenCast & Search Buttons */
+.layout-desktop .MuiBox-root.css-1riowxi {
+  order: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-left: -2px;
+}
+
+/* JF & Tabs Buttons */
+.layout-desktop .MuiStack-root.css-x5lcu9 {
+  flex-direction: column;
+  position: fixed;
+  left: 3px;
+  bottom: 0px;
+}
+
+/* Library buttons justification within top bar */
+.layout-desktop a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn, a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.css-19rbmc7 {
+  order: 1;
+  justify-content: flex-start;
+  padding: 15px 10px 15px 10px;
+  bottom: auto;
+}
+
+/* "More" Button reverse order */
+.layout-desktop button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn:has([data-testid="ArrowDropDownIcon"]) {
+  order: 2;
+  flex-direction: row-reverse;
+  gap: 12px;
+  left: -2.5px;
+  padding: 10px 0px 12px 0px;
+  pading-left: 0px;
+  justify-content: flex-end !important;
+}
+
+/* Jellyfin button within top bar */
+.layout-desktop a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.css-iqm7ky {
+  order: 3;
+  justify-content: flex-start;
+  padding: 10px 10px 10px 10px;
+  left: 0px;
+  bottom: auto;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+/* ~~~~~~~~~~~~ Move Top Bar to the Left Side & Rearange its Buttons Order ~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Collapse Left Bar - TRANSITIONS ~~~~~~~~~~~~~~~~~~~~ START */
+/* Sidebar */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv {
+  width: 50px;
+  opacity: 0.65;
+  transition-property: width, opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+/* Sidebar Hover */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover {
+  /* width: 290px; */
+  width: 320px;
+  opacity: 1;
+  transition-property: width, opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+/* Button Texts */
+.layout-desktop a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn, a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.css-iqm7ky, button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn {
+  font-size: 0px;
+  transition: font-size 0.15s ease;
+}
+
+/* Button Text Selected */
+.layout-desktop a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.css-19rbmc7 {
+  font-size: 0px;
+  transition: font-size 0.2s ease;
+}
+
+/* Side panel Reappears(Libary Items) */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn {
+  font-size: 11.3px;
+  transition: font-size 0.2s ease;
+  filter: drop-shadow(1px 2px 5px rgb(190 0 255 / 0%));
+}
+
+/* Side Panel Reappears Text Selected */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.css-19rbmc7 {
+  font-size: 11.3px;
+  transition: font-size 0.2s ease;
+}
+
+/* Side panel Reappears (for "More") */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.css-1f20jcn {
+  font-size: 11.3px;
+  transition: font-size 0.2s ease;
+}
+
+/* Side panel Reappears (for Jellyfin Server Name) */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.css-iqm7ky {
+  font-size: 13px;
+  filter: drop-shadow(1px 1px 1px rgb(190 0 255 / 56%));
+  transition: font-size 0.2s ease;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Collapse Left Bar - TRANSITIONS ~~~~~~~~~~~~~~~~~~~~  END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Left Bar - STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~ START */
+/* Remove default banner styling */
+.layout-desktop .MuiAppBar-root, .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.css-18bruhv {
+  background: none !important;
+   backdrop-filter: none !important;
+   border-bottom: none !important;
+   box-shadow: none !important;
+}
+
+/* Background Gradient Main Menu */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv {
+  background: linear-gradient(90deg, rgb(2 5 30) 20%, rgb(49 73 168 / 0%) 100%);
+  /* Comment line below for a more Vibrant Color Variant: */
+  /* background: linear-gradient(90deg,rgb(3 58 82) 20%, rgb(49 73 168 / 0%) 100%); */
+  /* text-shadow: 1.5px 1.5px 3px #022236e3; */
+  text-shadow: 1.5px 1.5px 3px #4b4b4be3;
+}
+
+/* Background Gradient of "More" Menu */
+.layout-desktop ul.MuiList-root.MuiList-padding.MuiMenu-list.css-ubifyk {
+  background: linear-gradient(90deg,rgb(3 58 82) 20%, rgb(49 73 168 / 32%) 100%);
+  text-shadow: 1.5px 1.5px 3px #022236e3;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Left Bar - STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Library's Filtering Bar ~~~~~~~~~~~~~~~~~~~~~~~ START */
+/* Filter Top bar in Library view */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-133e01t {
+    margin-bottom: 0px;
+}
+
+/* Filter Top bar in Library view */
+.layout-desktop .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-133e01t {
+    padding-left: 60px;
+    padding-right: 20px;
+    background: linear-gradient(180deg,rgb(168 168 168 / 90%), rgb(49 73 168 / 0%)100%);
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 3px #151616b0;
+    z-index: -1 !important;
+    margin-bottom: -20px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Library's Filtering Bar ~~~~~~~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Settings Pages - Fine Touches ~~~~~~~~~~~~~~~~~~~ START */
+/* User Settings Page */
+.layout-desktop .padded-left.padded-right.padded-bottom-page.padded-top {
+  margin-top: 100px !important;
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Display Settings Page */
+.layout-desktop .settingsContainer.padded-left.padded-right.padded-bottom-page {
+  margin-top: 100px !important;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Home Settings Screen */
+.layout-desktop .homeScreenSettingsContainer.padded-left.padded-right.padded-bottom-page {
+  margin-top: 150px;
+}
+
+/* Control Settings Screen */
+.layout-desktop .padded-left.padded-right.padded-bottom-page {
+  margin-top: 100px !important;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Settings Pages - Fine Touches ~~~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Login Page - STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~ START */
+/* Whole bar - Revert & Style for Top Use */
+.layout-desktop body.hideMainDrawer .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv {
+  position: unset;
+  flex-direction: unset;
+  height: unset;
+  width: unset;
+  background: unset;
+  opacity: unset;
+  margin-bottom: auto;
+  /* Uncomment line below to color the top nav bar: */
+  /* background: linear-gradient(180deg,rgb(3 58 82) 20%, rgb(49 73 168 / 0%) 100%); */
+}
+
+/* JF & Tabs Buttons (Includes Server Name)  */
+.layout-desktop body.hideMainDrawer .MuiStack-root.css-x5lcu9 {
+  position: unset;
+  bottom: unset;
+  font: unset;
+  max-width: 720px;
+  margin: 10px auto auto auto;
+}
+
+/* Jellyfin Server Name - Revert  */
+.layout-desktop body.hideMainDrawer .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.css-iqm7ky {
+  font-size: unset;
+  padding: 10px 20px 10px 20px;
+  /* Uncomment line below to center the Server name: */
+  /* position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); */
+}
+
+/* Jellyfin Server Name (Hover) - Revert  */
+.layout-desktop body.hideMainDrawer .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.padded-left.padded-right.css-1tmqktv:hover a.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeLarge.MuiButton-textSizeLarge.MuiButton-colorInherit.css-iqm7ky {
+  font-size: unset;
+}
+
+/* Login Box - Place below server name in the center */
+.layout-desktop body.hideMainDrawer div#loginPage {
+  display: block;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Login Page - STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Library Sub-Section - CENTER ~~~~~~~~~~~~~~~~~~~~~~~~ START */
+/* Main Library */
+.layout-desktop .padded-bottom-page.MuiBox-root.css-0 {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* Genres Page */
+.layout-desktop div#moviesPage {
+  max-width: 95%;
+  margin: 0 auto;  
+}
+
+/* Studios Page */
+.layout-desktop .itemsContainer.padded-left.padded-right.vertical-wrap.MuiBox-root.css-0 {
+  max-width: 90%;
+  margin: 0 auto; 
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Library Sub-Section - CENTER ~~~~~~~~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~ Library Filter Menus & Buttons - "GLASSY"fying ~~~~~~~~~~~~~~~~~ START */
+/* Filters Menu div */
+.layout-desktop .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1v2vhpl button {
+    background-color: transparent;
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+    text-shadow: #000000 0.5px 0.6px 3px;
+    transition: color 0.3s ease;
+}
+
+/* Filters Menu - Hovered Item */
+.layout-desktop .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1v2vhpl button:hover {
+    background-color: #b2b1b138;
+    color: #05f9eb;
+}
+
+/* Filters Menu only */
+.layout-desktop .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAccordion-root.css-ecgo44 {
+    background-color: transparent;
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+
+/* A-Z & Grid Menus (But effect Filters Menu, too) */
+.layout-desktop .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1v2vhpl {
+    background-color: transparent;
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+/* A-Z & Grid Menus Only */
+.layout-desktop ul.MuiList-root.MuiList-padding.css-1wduhak {
+    background-color: transparent;
+    color: #ffffff;
+    backdrop-filter: blur(5px);  
+    text-shadow: #000000 0.5px 0.6px 4px;
+}
+
+/* A-Z & Grid Menus Only - Hover */
+.layout-desktop .MuiListItemText-root.css-t3p1a1:hover {
+    color: #05f9eb;
+}
+
+/* Play All & Shuffle Buttons */
+.layout-desktop button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButtonGroup-firstButton.css-au9l87, .layout-desktop button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButtonGroup-lastButton.css-au9l87 {
+    background-color: #1579c08c !important;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: #000000 1px 2px 5px;
+    backdrop-filter: blur(5px);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* Play All & Shuffle Buttons - Hover */
+.layout-desktop button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButtonGroup-firstButton.css-au9l87:hover, .layout-desktop button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedContained.MuiButtonGroup-groupedContainedHorizontal.MuiButtonGroup-groupedContainedPrimary.MuiButtonGroup-lastButton.css-au9l87:hover {
+    background-color: #1579c0e0 !important;
+    transition: background-color 0.3s ease;
+}
+/* ~~~~~~~~~~~~~~~~~~~ Library Filter Menus & Buttons - "GLASSY"fying ~~~~~~~~~~~~~~~~~ END */
+
+/* ~~~~~~~~~~~~~~~~~~~ KBH-Reeper MOD ~~~~~~~~~~~~~~~~~ START */
+/* Add in hover text */
+/* Soft left-to-right tooltip */
+.css-i2hxb6::after {
+    content: attr(aria-label);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    margin-left: 8px;
+    white-space: nowrap;
+    font-size: large;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+/* Animate in from the left */
+.css-i2hxb6:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+}
+/* HIDE TOOLTIPS */
+.MuiTooltip-popper {
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
